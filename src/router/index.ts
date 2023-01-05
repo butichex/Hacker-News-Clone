@@ -1,5 +1,5 @@
 import { createRouter, createWebHashHistory, RouteRecordRaw } from 'vue-router'
-import MainView from '@/components/NewsList.vue'
+import MainView from '@/components/News/NewsList.vue'
 import CommentView from '@/views/NewsOverview.vue'
 
 
