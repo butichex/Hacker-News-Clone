@@ -1,14 +1,55 @@
 <template>
-  <router-view/>
+  <router-view />
 </template>
 
 <style lang="scss">
+$accent-color: #072D4B;
+$text-color: rgba(7, 45, 75, 0.6);
+$subtext-color: rgba(7, 45, 75, 0.4);
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+  font-family: 'Roboto';
+  font-size: 1rem;
+  color: $text-color;
+  box-sizing: border-box;
+  background-color: aliceblue;
+
 }
 
+
+.container {
+  margin: 0 auto;
+  max-width: 30vw;
+}
+
+
+.title {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 20px;
+  color: $accent-color;
+}
+
+.text {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: $text-color;
+}
+
+.subtext {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 22px;
+  color: $subtext-color;
+}
 </style>
