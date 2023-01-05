@@ -1,27 +1,27 @@
 import { createStore } from 'vuex';
 
 
-interface IComment {
-  id: number, 
-  title: string, 
+interface INews {
+  id: number,
+  title: string,
   link: string
 }
 
-const comments: IComment[] = []
+const news: INews[] = []
 
 export default createStore({
   state: {
-    comments: comments, 
+    news: news,
   },
   getters: {
   },
   mutations: {
-    addComment( {comments} , comment: IComment) {
-      comments.push(comment)
-    }, 
+    addNewsItem({ news }, newsItem: INews) {
+  news.push(newsItem)
+}, 
   },
-  actions: {
-  },
-  modules: {
-  },
+actions: {
+},
+modules: {
+},
 });
