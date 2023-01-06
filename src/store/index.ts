@@ -12,16 +12,21 @@ const news: INews[] = []
 export default createStore({
   state: {
     news: news,
+    currentPage: 1,
   },
   getters: {
   },
   mutations: {
     addNewsItem({ news }, newsItem: INews) {
-  news.push(newsItem)
-}, 
+      news.push(newsItem)
+
+    },
+    addCurrentPage({ currentPage }) {
+      currentPage++
+    }
   },
-actions: {
-},
-modules: {
-},
+  actions: {
+  },
+  modules: {
+  },
 });
