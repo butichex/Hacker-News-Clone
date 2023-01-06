@@ -1,7 +1,9 @@
 <template>
   <li class="news">
     <div class="news__inner">
-      <p class="news__title title">{{ title }}</p>
+      <p class="news__title title">
+        <a href="{{ link }}">{{ title }}</a>
+      </p>
       <div class="news__data">
         <div class="news__author author">
           <i class="author__icon pi pi-user"></i>
@@ -53,14 +55,14 @@ export default defineComponent({
     gap: 1rem;
   }
 
-  &__data > * {
+  &__data>* {
     display: flex;
     gap: 0.5rem;
     justify-content: center;
     align-items: center;
   }
 
-  &__data > i {
+  &__data>i {
     font-size: 0.35rem;
   }
 }

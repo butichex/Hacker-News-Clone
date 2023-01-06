@@ -1,5 +1,5 @@
 <template>
-    <div @click="loadMore" class="button load-more">
+    <div class="button load-more">
         {{ text }}
     </div>
   </template>
@@ -12,13 +12,6 @@
     props: {
       text: String,
     },
-    computed: {
-    }, 
-    methods: {
-        loadMore() {
-
-        }
-    }
   });
   </script>
   
@@ -30,13 +23,11 @@
         justify-content: center;
         align-items: center;
         font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 400;
         font-size: 0.75rem;
         color: #072D4B;
         padding: 0.5rem 0.8rem;
         border: 0.2px solid #072D4B;
-        border-radius: 4px;
+        border-radius: 0.25rem;
         background-color: transparent;
         transition: all 0.1s  ease-in;
     }

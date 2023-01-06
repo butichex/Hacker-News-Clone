@@ -10,19 +10,21 @@ $subtext-color: rgba(7, 45, 75, 0.4);
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
 
 
-#app {
+html,
+body {
   font-family: 'Roboto';
   font-size: 1rem;
   color: $text-color;
   box-sizing: border-box;
   background-color: aliceblue;
-
 }
+
+#app {}
 
 
 .container {
   margin: 0 auto;
-  max-width: 30vw;
+  max-width: 36vw;
 }
 
 
