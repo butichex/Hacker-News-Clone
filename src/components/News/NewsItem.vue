@@ -2,20 +2,20 @@
   <li class="news">
     <div class="news__inner">
       <p class="news__title title">
-        <a href="{{ link }}">{{ title }}</a>
+        <router-link :to='"/comments/" + newsItem.id'>{{ newsItem.title }}</router-link>
       </p>
       <div class="news__data">
         <div class="news__author author">
           <i class="author__icon pi pi-user"></i>
-          <p class="author__value subtext">{{ author }}</p>
+          <p class="author__value subtext">{{ newsItem.author }}</p>
         </div>
         <div class="news__score score">
           <i class="score__icon pi pi-heart"></i>
-          <p class="score__value subtext">{{ score }}</p>
+          <p class="score__value subtext">{{ newsItem.score }}</p>
         </div>
         <div class="news__comments-count comments-count">
           <i class="comments-count__icon pi pi-comments"></i>
-          <p class="comments-count__value subtext">{{ commentsCount }}</p>
+          <p class="comments-count__value subtext">{{ newsItem.commentsCount }}</p>
         </div>
       </div>
     </div>
@@ -24,20 +24,15 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue';
+import { defineComponent, onMounted } from 'vue';
 
 export default defineComponent({
   name: 'NewsItem',
   props: {
-    score: Number,
-    id: Number,
-    commentsCount: Number,
-    author: String,
-    title: String,
-    link: String
+    newsItem: {
+      type: Object, 
+    }
   },
-  computed: {
-  }
 });
 </script>
 
